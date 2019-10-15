@@ -1,0 +1,65 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+h1, h2 {
+    font-weight: bold;
+}
+p {
+    font-size: 16px;
+    color: #444444;
+}
+
+
+hr.large {
+    border-top: 3px solid #f0f0f0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+hr.small {
+    /* height: 1px;
+    background: linear-gradient(to right, white, #444444, #444444, white);
+    border-color: white; */
+    border: 1px solid rgb(54, 113, 165);
+}
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.navbar-header .navbar-brand {
+    text-transform: uppercase;
+    color: black;
+    font-size: 24px;
+}
+.navbar-nav .nav-item .nav-link {
+    font-size: 22px;
+    color: #444444;
+    margin-left: 20px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: white;
+    background: #00539B;
+    border-radius: 5px;
+}
+
+.section-heading {
+    display: inline-block;
+}
+
+.skills i.fa {
+    color: #00539B;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.skills ul li a {
+    color: #444444;
+}
+.skills ul li a:hover {
+    color: #007bff;
+    text-decoration: none;
+}

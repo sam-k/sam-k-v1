@@ -17,37 +17,78 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:600|Source+Sans+Pro:600,700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:600|IBM+Plex+Sans:400,600|Source+Sans+Pro:600,700|Source+Code+Pro:400&display=swap"
     rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body>
   <nav class="navbar navbar-static-top navbar-expand-lg navbar-light ml-auto">
     <div class="container">
       <div class="navbar navbar-header mr-auto">
-        <a class="navbar-brand" href="#">Sam Kim</a>
+        <a href="#"><span class="navbar-brand">S a m &nbsp; K i m</span></a>
       </div>
       <ul class="navbar navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="me">Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="assets/Sam-Kim-Resume-2019-Public.pdf">Resume</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="header">
+  <section id="header">
     <div class="container">
-      <h1 style="font-size: 80px;">Sam, I am.</h1>
-      <p>This is my website.</p>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="profile">
+            <h1>Sam, I am.</h1>
+            <p class="profile-desc">I’m a <code>computational</code> <code>biologist</code> and <code>software</code>
+              <code>engineer</code>, studying at Duke University. I believe that technology is the answer to treating
+              and curing more people, and at a much lower cost.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="profile-card">
+            <div class="profile-pic"><img src="assets/profile.jpeg"></div>
+            <div class="profile-card-desc">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th style="width: 19%;"></th>
+                    <th style="width: 5%;"></th>
+                    <th style="width: 76%;"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td class="icon">
+                      <p><i class="fa fa-envelope"></i></p>
+                      <p><i class="fab fa-linkedin-in"></i></p>
+                      <p><i class="fa fa-code-branch"></i></p>
+                      <p><i class="fa fa-location-arrow"></i></p>
+                    </td>
+                    <td>
+                      <p><a href="mailto:sam.kim@duke.edu" target="_blank">sam.kim@duke.edu</a></p>
+                      <p><a href="https://www.linkedin.com/in/sdk/" target="_blank">linkedin.com/in/sdk</a></p>
+                      <p><a href="https://github.com/sam-k" target="_blank">github.com/sam-k</a></p>
+                      <p>Durham, N.C.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="container">
-    <hr class="large">
-  </div>
-
-  <section class="skills">
+  <section id="skills">
+    <div class="container">
+      <hr class="large">
+    </div>
     <div class="col-md-12 text-center">
       <div class="section-heading">
         <h2>Skills</h2>
@@ -58,7 +99,7 @@
       <div class="row">
         <div class="col-md-4 text-center">
           <i class="fa fa-server fa-4x"></i>
-          <h3>Full Stack</h3>
+          <h3>Programming</h3>
           <ul>
             <li>Python</li>
             <li>Java ⋄ C/C++</li>
@@ -92,11 +133,10 @@
     </div>
   </section>
 
-  <div class="container">
-    <hr class="large">
-  </div>
-
-  <section class="projects">
+  <section id="projects">
+    <div class="container">
+      <hr class="large">
+    </div>
     <div class="col-md-12 text-center">
       <div class="section-heading">
         <h2>Projects</h2>
@@ -111,11 +151,11 @@
               <img src="assets/gordan-lab.jpg">
               <h4>Hard-to-reach mutations</h4>
               <p class="subtitle">Investigating DNA transcription’s role in causing cancer</p>
-              <p>Analyzing public genome and epigenome data to study if transcription factor-binding prevents repair
-                enzymes from accessing damaged DNA.
+              <p>Analyzing public genome data to study if transcription factor-binding can prevent repair enzymes from
+                accessing damaged DNA.
               </p>
-              <p>Project under <a href="http://gordanlab.cs.duke.edu/">Prof. Gordân</a> at Duke Center for Genomic &
-                Computational Biology.</p>
+              <p>Project under <a href="http://gordanlab.cs.duke.edu/">Raluca Gordân</a> at the Duke Center for
+                Genomic & Computational Biology.</p>
               <p class="subsubtitle">Tools</p>
               <ul class="list-bar tools">
                 <li>Python</li>
@@ -133,18 +173,17 @@
             <div class="project-card col-md-12">
               <img src="assets/x-force.jpg">
               <h4>Field Medic Reference App</h4>
-              <p class="subtitle">Providing Special Ops medics with reference materials</p>
-              <p>Building iOS/Android app to let Special Operations Forces medics consult customized, up-to-date
-                medical reference materials when treating patients abroad.</p>
-              <p>Internship at <a href="https://www.nsin.us/x-force/">X-Force Fellowship</a>. Code is property of the
-                Department of Defense.</p>
+              <p class="subtitle">Providing Special Ops medics with up-to-date medical knowledge</p>
+              <p>Building iOS/Android app to replace Special Ops combat medics’ outdated books and database with
+                customized, up-to-date medical reference materials.</p>
+              <p>Internship at <a href="https://www.nsin.us/">NSIN</a>’s <a href="https://www.nsin.us/x-force/">X-Force
+                  Fellowship</a>. Code is property of Department of Defense.</p>
               <p class="subsubtitle">Tools</p>
               <ul class="list-bar tools">
                 <li>C#</li>
                 <a href="https://dotnet.microsoft.com/apps/xamarin">
                   <li>Xamarin</li>
                 </a>
-                <li>SQL</li>
               </ul>
               <p class="subsubtitle">Links</p>
               <ul class="list-bar links">
@@ -157,7 +196,7 @@
           <div class="row no-gutters">
             <div class="project-card col-md-12">
               <img src="assets/nih.jpg">
-              <h4>2019 Civic Digital Fellow</h4>
+              <h4>How many U.S. scientists?</h4>
               <p class="subtitle">Describing the NIH-funded research workforce</p>
               <p>Led project to describe scientists funded by the federal research agency, using ML techniques.
                 Results may help inform Congress and automate future analyses.</p>
@@ -188,21 +227,36 @@
     </div>
   </section>
 
-  <div class="container">
-    <hr class="large">
-  </div>
-
-  <section class="contact">
+  <section id="contact">
+    <div class="container">
+      <hr class="large">
+    </div>
     <div class="col-md-12 text-center">
       <div class="section-heading">
-        <h2>Contact Me</h2>
+        <h2>Get in Touch</h2>
         <hr class="small">
       </div>
     </div>
-    <div class="container">
-      Contact Information
+    <div class="contact-msg container">
+      <p>As an ambitious junior at Duke University,<br>I’m always open to new challenges, and my inbox is always open.
+      </p>
+      <p>Whether for a potential opportunity or just to say hi,<br>feel free to shoot me an email at <a
+          href="mailto:sam.kim@duke.edu">sam.kim@duke.edu</a>!</p>
     </div>
   </section>
+
+  <footer class="container">
+    <div class="row">
+      <div class="icons col-6">
+        <a href="mailto:sam.kim@duke.edu" target="_blank"><i class="fa fa-lg fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/sdk/" target="_blank"><i class="fab fa-lg fa-linkedin"></i></a>
+        <a href="https://github.com/sam-k" target="_blank"><i class="fab fa-lg fa-github"></i></a>
+      </div>
+      <div class="copyright col-6">
+        <p>Designed & Built by Sam Kim, © 2019</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
